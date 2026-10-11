@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><header>
+    <h1>🍽️ Recipe Recommendation System</h1>
+    <p>Discover delicious recipes with the ingredients you have!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#recipes">Recipes</a>
+    <a href="#favourites">Favourites</a>
+    <a href="#about">About</a>
+</nav>
+
+<main id="home">
+    <h2>Find Your Perfect Recipe 💜</h2>
+    <p>Enter an ingredient to discover recipes you can make.</p>
+
+    <input
+        type="text"
+        id="ingredientInput"
+        placeholder="Example: potato, tomato, rice"
+    >
+
+    <button id="searchButton">Find Recipes</button>
+    <button id="randomButton">🎲 Surprise Me!</button>
+
+    <p id="message"></p>
+
+    <section id="recipes">
+        <h2>Our Recipes 🍲</h2>
+        <div class="category-filters">
+    <button class="categoryButton" data-category="All">All Recipes</button>
+    <button class="categoryButton" data-category="Breakfast">Breakfast</button>
+    <button class="categoryButton" data-category="Lunch">Lunch</button>
+    <button class="categoryButton" data-category="Dinner">Dinner</button>
+    <button class="categoryButton" data-category="Drinks">Drinks</button>
+</div>
+        <div id="recipeList"></div>
+    </section>
+
+    <section id="favourites">
+        <h2>❤️ My Favourite Recipes</h2>
+        <div id="favouriteList"></div>
+    </section>
+
+    <section id="about">
+        <h2>About This Website</h2>
+        <p>
+            This Recipe Recommendation System helps users discover
+            recipes based on ingredients available at home.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>Recipe Recommendation System | Created by a BCA Student</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html> 
